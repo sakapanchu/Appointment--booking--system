@@ -53,8 +53,8 @@ Configure environment variables in a .env file (e.g., database connection, JWT s
 
 Run the application:
 
-    npm start   # Start frontend
-    npm run dev  # Start backend (for Node.js)
+    npm start   # Start backend (for Node.js)
+    npm run dev  # Start frontend 
 
 Open http://localhost:3000 (or the defined port) in your browser.
 
