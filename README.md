@@ -1,100 +1,95 @@
-### Appointment Booking System
+# 📅 Appointment Booking System
 
 ## 📌 Introduction
 
 The Appointment Booking System is a web-based application that allows users to schedule, manage, and track appointments efficiently. It provides an intuitive interface for both clients and service providers to book and manage appointments seamlessly.
 
 ## ✨ Features
+  
+  1. User registration and authentication (JWT-based authentication)
+  2. Role-based access (Admin, Service Provider, Client)
+  3. Appointment scheduling and rescheduling
+  4. Notifications and reminders
+  5. Dashboard for managing appointments
+  6. Admin panel for managing available slots and viewing all appointments
+  7. Secure and scalable architecture
 
-User registration and authentication (JWT-based authentication)
-
-Role-based access (Admin, Service Provider, Client)
-
-Appointment scheduling and rescheduling
-
-Notifications and reminders
-
-Dashboard for managing appointments
-
-Admin panel for managing available slots and viewing all appointments
-
-Secure and scalable architecture
 
 ## 🚀 Technologies Used
-
-Frontend: React.js (with TailwindCSS or Material-UI for styling)
-
-Backend: Node.js (Express.js) or Spring Boot
-
-Database: PostgreSQL or MySQL
-
-Authentication: JWT for user login and access control
-
-Deployment: AWS / Heroku / Vercel (if applicable)
+  
+  1. Frontend: React.js (with TailwindCSS or Material-UI for styling)
+  
+  2. Backend: Node.js (Express.js) 
+  
+  3. Database: MongoDB
+  
+  4. Authentication: JWT for user login and access control
+  
+  5. Deployment: AWS / Heroku / Vercel (if applicable)
 
 ## 🛠️ Installation Guide
 
-# Prerequisites
+### Prerequisites
 
 Ensure you have the following installed:
 
-Node.js & npm
+    Node.js & npm
 
-PostgreSQL or MySQL database setup
+    MongoDB setup
 
-Steps to Install
+### Steps to Install
 
 Clone the repository:
 
-git clone https://github.com/sakapanchu/Appointment--booking--system.git
-cd Appointment--booking--system
+    git clone https://github.com/sakapanchu/Appointment--booking--system.git
+    cd Appointment--booking--system
 
 Install dependencies:
 
-npm install   # For frontend
-cd backend && npm install  # For backend (if using Node.js)
+    npm install   # For frontend
+    cd backend && npm install  # For backend (if using Node.js)
 
 Configure environment variables in a .env file (e.g., database connection, JWT secrets).
 
 Run the application:
 
-npm start   # Start frontend
-npm run dev  # Start backend (for Node.js)
+    npm start   # Start frontend
+    npm run dev  # Start backend (for Node.js)
 
 Open http://localhost:3000 (or the defined port) in your browser.
 
-### 📖 API Endpoints
+## 🔗 API Endpoints
 
-Public Endpoints
+### Public Endpoints
 
-GET /slots - Retrieve available time slots.
+    GET /slots - Retrieve available time slots.
+    
+    POST /appointments - Book an appointment.
+    
+    GET /appointments - Retrieve booked appointments for a user.
+    
+    DELETE /appointments/:id - Cancel an appointment.
 
-POST /appointments - Book an appointment.
+### Admin Endpoints
 
-GET /appointments - Retrieve booked appointments for a user.
+    POST /slots - Add available time slots.
+    
+    GET /admin/appointments - View all booked appointments.
 
-DELETE /appointments/:id - Cancel an appointment.
+## 📖 Usage
 
-Admin Endpoints
-
-POST /slots - Add available time slots.
-
-GET /admin/appointments - View all booked appointments.
-
-### 📖 Usage
-
-Sign up/log in to the system.
-
-Select a service provider and available time slot.
-
-Confirm appointment and receive notifications.
-
-Admins can manage appointments and users.
+  1. Sign up/log in to the system.
+  
+  2. Select a service provider and available time slot.
+  
+  3. Confirm appointment and receive notifications.
+  
+  4. Admins can manage appointments and users.
 
 
-📬 Contact
+## 📬 Contact
 
-For any queries, reach out to sakaaniya2000@gmail.com or open an issue in the repository.
+If you have any questions, please contact sakaaniya2000@gmail.com or open an issue in the repository.
 
 
 
